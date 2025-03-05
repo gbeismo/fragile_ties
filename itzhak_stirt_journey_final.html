@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_af7c65d61038da1901316c880a392f28 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_af7c65d61038da1901316c880a392f28" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_af7c65d61038da1901316c880a392f28 = L.map(
+                "map_af7c65d61038da1901316c880a392f28",
+                {
+                    center: [54.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a99c087b4ec295be06dda74675df671 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var marker_6c4c13f6a401a9466b433c471e49066b = L.marker(
+                [54.8985, 23.9036],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_87f63468260c8587591bb0ace1cfd1db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c4c13f6a401a9466b433c471e49066b.setIcon(icon_87f63468260c8587591bb0ace1cfd1db);
+        
+    
+        var popup_71114b51e12a9b575dc989d9e1120fb1 = L.popup({"maxWidth": 400});
+
+        
+            var html_b37555d223ea1d433739e5e63eecf1fe = $(`<div id="html_b37555d223ea1d433739e5e63eecf1fe" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Kovna (Kaunas, Lithuania)<br><b>Date:</b> January 13, 1940<br><b>Summary:</b> Itzhak Stirt departs from Kaunas at 12:30 PM, heading toward Kėdainiai. Chaim Rubin accompanies him part of the way.<br><b>Diary Entry:</b> "At 10am, Saturday [13 January 1940], I went to the train station and all my friends and acquaintances were there and at 12:30pm I left Kovna. Chaim Rubin went with me until Kaydan."</div>`)[0];
+            popup_71114b51e12a9b575dc989d9e1120fb1.setContent(html_b37555d223ea1d433739e5e63eecf1fe);
+        
+
+        marker_6c4c13f6a401a9466b433c471e49066b.bindPopup(popup_71114b51e12a9b575dc989d9e1120fb1)
+        ;
+
+        
+    
+    
+            var marker_ae7b95d40c742183b8c708f3687ac761 = L.marker(
+                [55.2886, 23.9727],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_4dd0095032127f824e7d9f055f411046 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae7b95d40c742183b8c708f3687ac761.setIcon(icon_4dd0095032127f824e7d9f055f411046);
+        
+    
+        var popup_f762fcfcce13c912a9edb5c96aedc88c = L.popup({"maxWidth": 400});
+
+        
+            var html_eedd4d0b097a59a7492da20b164e8449 = $(`<div id="html_eedd4d0b097a59a7492da20b164e8449" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Kaydan (Kėdainiai, Lithuania)<br><b>Date:</b> January 13, 1940<br><b>Summary:</b> Itzhak Stirt continues by train toward Riga.<br><b>Diary Entry:</b> "At 6 in the evening, we arrived in Riga and we waited until 11:30 at night at the Riga station."</div>`)[0];
+            popup_f762fcfcce13c912a9edb5c96aedc88c.setContent(html_eedd4d0b097a59a7492da20b164e8449);
+        
+
+        marker_ae7b95d40c742183b8c708f3687ac761.bindPopup(popup_f762fcfcce13c912a9edb5c96aedc88c)
+        ;
+
+        
+    
+    
+            var marker_1c0afc24f2fd8aa839fe6d374e09ebcd = L.marker(
+                [56.9496, 24.1052],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_28c32e25b2adc0553b3f234fb88d6e20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c0afc24f2fd8aa839fe6d374e09ebcd.setIcon(icon_28c32e25b2adc0553b3f234fb88d6e20);
+        
+    
+        var popup_76ba2c3ec3305e0a017ecf6e17d719b0 = L.popup({"maxWidth": 400});
+
+        
+            var html_3b6ee9cd2beaa7f44bc9a64ac4ef55e7 = $(`<div id="html_3b6ee9cd2beaa7f44bc9a64ac4ef55e7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Riga, Latvia<br><b>Date:</b> January 13-14, 1940<br><b>Summary:</b> After arriving in Riga at 6 PM, Itzhak Stirt waits at the station until 11:30 PM before taking a train to Ventspils.<br><b>Diary Entry:</b> "Then we took the train to Vindava. We went there because the Riga port was frozen."</div>`)[0];
+            popup_76ba2c3ec3305e0a017ecf6e17d719b0.setContent(html_3b6ee9cd2beaa7f44bc9a64ac4ef55e7);
+        
+
+        marker_1c0afc24f2fd8aa839fe6d374e09ebcd.bindPopup(popup_76ba2c3ec3305e0a017ecf6e17d719b0)
+        ;
+
+        
+    
+    
+            var marker_e458f7fa7c4220373b3a9b5b918a6ce2 = L.marker(
+                [57.3949, 21.5606],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_8b0cf1890b7b227ee7c21df271098546 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e458f7fa7c4220373b3a9b5b918a6ce2.setIcon(icon_8b0cf1890b7b227ee7c21df271098546);
+        
+    
+        var popup_1e8616bd1efe747527336b3228a76a1b = L.popup({"maxWidth": 400});
+
+        
+            var html_7ebb95f5d6db8eb31ab86691cebd14fe = $(`<div id="html_7ebb95f5d6db8eb31ab86691cebd14fe" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Vindava (Ventspils, Latvia)<br><b>Date:</b> January 14-15, 1940<br><b>Summary:</b> Itzhak Stirt boards a small Swedish ship heading to Sweden. A storm makes it hard to stand, and many, including him, fall ill due to the cold.<br><b>Diary Entry:</b> "From there, we went on a small Swedish ship to Sweden. The ship was small, and added to that, there was a storm so that we couldn't stand up. We were all seasick and besides this, it was so cold, I got extremely ill."</div>`)[0];
+            popup_1e8616bd1efe747527336b3228a76a1b.setContent(html_7ebb95f5d6db8eb31ab86691cebd14fe);
+        
+
+        marker_e458f7fa7c4220373b3a9b5b918a6ce2.bindPopup(popup_1e8616bd1efe747527336b3228a76a1b)
+        ;
+
+        
+    
+    
+            var marker_1664b49f04ae3bbc6aebdd92269a6a22 = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_58086661f5193f3825bbdab9ba360e86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1664b49f04ae3bbc6aebdd92269a6a22.setIcon(icon_58086661f5193f3825bbdab9ba360e86);
+        
+    
+        var popup_44e73742b5a1a7d9325e09fc13426d83 = L.popup({"maxWidth": 400});
+
+        
+            var html_1858916579a8a8b59a01745b2642b786 = $(`<div id="html_1858916579a8a8b59a01745b2642b786" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Stockholm, Sweden<br><b>Date:</b> January 15-16, 1940<br><b>Summary:</b> A German warship intercepts the ship near Stockholm, forcing it to change course to Świnoujście.<br><b>Diary Entry:</b> "Getting close to Stockholm, in the middle of the night, I realized how much danger the ship was in and how risky our situation was. After a while, a motorboat came to us filled with German soldiers. It was a German warship that was taking over our ship. After searching the ship, they found mail going to France and Milan and they ordered our captain to change course and sail to a German port called Shvina-Minza [Świnoujście]. They confiscated everyone's cameras so no one could take pictures and then the ship turned around and left the port."</div>`)[0];
+            popup_44e73742b5a1a7d9325e09fc13426d83.setContent(html_1858916579a8a8b59a01745b2642b786);
+        
+
+        marker_1664b49f04ae3bbc6aebdd92269a6a22.bindPopup(popup_44e73742b5a1a7d9325e09fc13426d83)
+        ;
+
+        
+    
+    
+            var marker_870c19370848e7083234457865a592ee = L.marker(
+                [53.9105, 14.2476],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_835aa28b718f2eabc8ded19e56f91041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_870c19370848e7083234457865a592ee.setIcon(icon_835aa28b718f2eabc8ded19e56f91041);
+        
+    
+        var popup_b7a6fe61f7cddabfae346f5ff0d2a234 = L.popup({"maxWidth": 400});
+
+        
+            var html_6840557fce36ca5443d2adcdacf2a30a = $(`<div id="html_6840557fce36ca5443d2adcdacf2a30a" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Świnoujście, Germany (now Poland)<br><b>Date:</b> January 17-18, 1940<br><b>Summary:</b> After being searched by German soldiers, the ship is allowed to leave for Sweden.<br><b>Diary Entry:</b> "Wednesday, we left the port for Sweden and Thursday morning we came to Treleberg, a Swedish port."</div>`)[0];
+            popup_b7a6fe61f7cddabfae346f5ff0d2a234.setContent(html_6840557fce36ca5443d2adcdacf2a30a);
+        
+
+        marker_870c19370848e7083234457865a592ee.bindPopup(popup_b7a6fe61f7cddabfae346f5ff0d2a234)
+        ;
+
+        
+    
+    
+            var marker_15306f4b07b77bfcda648e2d26d18084 = L.marker(
+                [55.3751, 13.1569],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_b2f132d653b68498b06b96688828fa94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15306f4b07b77bfcda648e2d26d18084.setIcon(icon_b2f132d653b68498b06b96688828fa94);
+        
+    
+        var popup_d58fd5fcf55f0b2d93987fe90ba60c3b = L.popup({"maxWidth": 400});
+
+        
+            var html_16fd7c901b133c83af1f0a006b4db918 = $(`<div id="html_16fd7c901b133c83af1f0a006b4db918" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Trelleborg, Sweden<br><b>Date:</b> January 18, 1940<br><b>Summary:</b> Itzhak Stirt departs Trelleborg at 11 AM for Gothenburg.<br><b>Diary Entry:</b> "From there, we left for Goteberg at 11am."</div>`)[0];
+            popup_d58fd5fcf55f0b2d93987fe90ba60c3b.setContent(html_16fd7c901b133c83af1f0a006b4db918);
+        
+
+        marker_15306f4b07b77bfcda648e2d26d18084.bindPopup(popup_d58fd5fcf55f0b2d93987fe90ba60c3b)
+        ;
+
+        
+    
+    
+            var marker_44a636a503ea634379eaaf3a25bfefb8 = L.marker(
+                [57.7089, 11.9746],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_1b7474f5a5bf0faea654a1351d24a69f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44a636a503ea634379eaaf3a25bfefb8.setIcon(icon_1b7474f5a5bf0faea654a1351d24a69f);
+        
+    
+        var popup_29f0911022bf6d70c4c97080c856f291 = L.popup({"maxWidth": 400});
+
+        
+            var html_550728c87bad2e05cd4d5c323523d1c8 = $(`<div id="html_550728c87bad2e05cd4d5c323523d1c8" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Gothenburg, Sweden<br><b>Date:</b> January 18-19, 1940<br><b>Summary:</b> Itzhak Stirt arrives in Gothenburg at 6 PM, spends the night in a hotel, and departs by ship the next morning.<br><b>Diary Entry:</b> "At 6pm in the evening, we arrived in Goteberg. They took us by bus to a hotel where we spent the night. In the morning, we had breakfast and on Friday, January 19th, they brought us by bus to the ship. The ship was supposed to sail on January 18th, but because they waited for our group, it left on January 19, 1940 - 10 am. Before we left Goteberg, I took a taxi to the post office where I sent, in German, a telegram that I was leaving Sweden."</div>`)[0];
+            popup_29f0911022bf6d70c4c97080c856f291.setContent(html_550728c87bad2e05cd4d5c323523d1c8);
+        
+
+        marker_44a636a503ea634379eaaf3a25bfefb8.bindPopup(popup_29f0911022bf6d70c4c97080c856f291)
+        ;
+
+        
+    
+    
+            var marker_651b554200e07860e021f290664f1754 = L.marker(
+                [60.3913, 5.3221],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_b4919ab012a1622ad26ef401b174a353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_651b554200e07860e021f290664f1754.setIcon(icon_b4919ab012a1622ad26ef401b174a353);
+        
+    
+        var popup_caeb2a2604db4a18bcbe6ceb1c168ee6 = L.popup({"maxWidth": 400});
+
+        
+            var html_2e9d15ee6924418bd5f1f38a3d0a4c2e = $(`<div id="html_2e9d15ee6924418bd5f1f38a3d0a4c2e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> Bergen, Norway [?]<br><b>Date:</b> Between January 19-29, 1940 (Approximate)<br><b>Summary:</b> The ship makes a stop in Norway, possibly Bergen, to pick up more passengers before continuing the transatlantic journey.<br><b>Diary Entry:</b> "Up to Saturday, while we were sailing along the Norwegian coast, I was alright. We stopped in Norway to pick up more passengers. From there, we sailed away and then the ship started rocking and again, I got sick for a few days. The food on the ship was very good but I was aggravated that I couldn't eat. Since I couldn't speak a word of Norwegian, I often asked for one thing and got another."</div>`)[0];
+            popup_caeb2a2604db4a18bcbe6ceb1c168ee6.setContent(html_2e9d15ee6924418bd5f1f38a3d0a4c2e);
+        
+
+        marker_651b554200e07860e021f290664f1754.bindPopup(popup_caeb2a2604db4a18bcbe6ceb1c168ee6)
+        ;
+
+        
+    
+    
+            var marker_2b9d988c0b3407eae0df142c2d79184c = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            var icon_42241c8225855ce422052fca1ab3bb25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b9d988c0b3407eae0df142c2d79184c.setIcon(icon_42241c8225855ce422052fca1ab3bb25);
+        
+    
+        var popup_898b2bb1994074e0cba1900647b48120 = L.popup({"maxWidth": 400});
+
+        
+            var html_681d2e565e49b36e2051f56d40a22b76 = $(`<div id="html_681d2e565e49b36e2051f56d40a22b76" style="width: 100.0%; height: 100.0%;"><b>Location:</b> New York, USA<br><b>Date:</b> January 29, 1940<br><b>Summary:</b> After a 10-day transatlantic journey, Itzhak Stirt arrives in New York.<br><b>Diary Entry:</b> "On Monday morning, we arrived in New York harbor. I saw the Statue of Liberty, the symbol of freedom which I liked very much. The journey took 10 days and we arrived in New York on January 29, 1940. When I left the ship, I immediately noticed Uncle Yakov, but he didn't recognize me because it was 4 years since he was in Europe and I changed much since then."</div>`)[0];
+            popup_898b2bb1994074e0cba1900647b48120.setContent(html_681d2e565e49b36e2051f56d40a22b76);
+        
+
+        marker_2b9d988c0b3407eae0df142c2d79184c.bindPopup(popup_898b2bb1994074e0cba1900647b48120)
+        ;
+
+        
+    
+    
+            ant_path_3f82317c9d8b588df1db6c4795fc5ede = L.polyline.antPath(
+              [[54.8985, 23.9036], [55.2886, 23.9727]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_3f82317c9d8b588df1db6c4795fc5ede.bindTooltip(
+                `<div>
+                     Train from Kovna (Kaunas, Lithuania) to Kaydan (Kėdainiai, Lithuania)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_98ca225c894dc10005d34cff9b4540e4 = L.polyline.antPath(
+              [[55.2886, 23.9727], [56.9496, 24.1052]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_98ca225c894dc10005d34cff9b4540e4.bindTooltip(
+                `<div>
+                     Train from Kaydan (Kėdainiai, Lithuania) to Riga, Latvia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_8326ead2bd44d09e1dcba0b83b3ba777 = L.polyline.antPath(
+              [[56.9496, 24.1052], [57.3949, 21.5606]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_8326ead2bd44d09e1dcba0b83b3ba777.bindTooltip(
+                `<div>
+                     Train from Riga, Latvia to Vindava (Ventspils, Latvia)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_e7ee22ac25eba38f1f54f5c1683d8661 = L.polyline.antPath(
+              [[57.3949, 21.5606], [59.3293, 18.0686]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_e7ee22ac25eba38f1f54f5c1683d8661.bindTooltip(
+                `<div>
+                     Ship from Vindava (Ventspils, Latvia) to Stockholm, Sweden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_a7c9861ccb2dc6671e1fa7416a7bb319 = L.polyline.antPath(
+              [[59.3293, 18.0686], [53.9105, 14.2476]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_a7c9861ccb2dc6671e1fa7416a7bb319.bindTooltip(
+                `<div>
+                     Ship - Captured by Germans from Stockholm, Sweden to Świnoujście, Germany (now Poland)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_9502c40e9716e763e5eab6df5afb6f68 = L.polyline.antPath(
+              [[53.9105, 14.2476], [55.3751, 13.1569]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_9502c40e9716e763e5eab6df5afb6f68.bindTooltip(
+                `<div>
+                     Ship from Świnoujście, Germany (now Poland) to Trelleborg, Sweden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_06c1659088b35439ed695b07a03367de = L.polyline.antPath(
+              [[55.3751, 13.1569], [57.7089, 11.9746]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_06c1659088b35439ed695b07a03367de.bindTooltip(
+                `<div>
+                     Train from Trelleborg, Sweden to Gothenburg, Sweden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_1e791f11ac9d4001ff290436dea45bf5 = L.polyline.antPath(
+              [[57.7089, 11.9746], [60.3913, 5.3221]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_1e791f11ac9d4001ff290436dea45bf5.bindTooltip(
+                `<div>
+                     Ship from Gothenburg, Sweden to Bergen, Norway [?]
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_f4fcf8c8f40e2f53aad691163d25404e = L.polyline.antPath(
+              [[60.3913, 5.3221], [40.7128, -74.006]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+        ).addTo(map_af7c65d61038da1901316c880a392f28);
+        
+    
+            ant_path_f4fcf8c8f40e2f53aad691163d25404e.bindTooltip(
+                `<div>
+                     Ship from Bergen, Norway [?] to New York, USA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
